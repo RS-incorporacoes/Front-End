@@ -1,6 +1,7 @@
 .nav{
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 .nav-wrapper{
@@ -12,6 +13,7 @@
 
 .logo{
     cursor: pointer;
+    width: 50px
 }
 
 .link-wrapper{
@@ -22,6 +24,7 @@
 
 .link{
     cursor:pointer;
+    font-size: 20px;
 }
 
 .bordered{
