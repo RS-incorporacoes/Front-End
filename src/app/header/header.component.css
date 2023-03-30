@@ -1,0 +1,31 @@
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.link-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.link{
+    cursor:pointer;
+}
+
+.bordered{
+    padding: 0px 10px;
+    border: solid;
+    border-radius: 10px;
+}

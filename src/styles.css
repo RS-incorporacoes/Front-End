@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(./assets/fonts/Poppins-SemiBold.ttf);
+}
+
+body{
+    color:#4C0000;
+    font-family: 'Poppins-SemiBold', sans-serif;
+}
