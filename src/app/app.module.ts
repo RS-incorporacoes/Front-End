@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LandPageComponent } from './land-page/land-page.component';
 import { BannerComponent } from './banner/banner.component';
-import { ProjectPageComponent } from './project-page/project-page.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { ProjectPageComponent } from './project-page/project-page.component';
     HeaderComponent,
     LandPageComponent,
     BannerComponent,
-    ProjectPageComponent
+    ProjectsPageComponent,
+    ProjectsPageComponent
   ],
   imports: [
     BrowserModule,
