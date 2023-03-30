@@ -8,6 +8,16 @@
     src: url(./assets/fonts/Poppins-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+
+a{
+    color:#4C0000;
+    text-decoration: none;
+}
+
 body{
     color:#4C0000;
     font-family: 'Poppins-SemiBold', sans-serif;
