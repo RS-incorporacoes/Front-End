@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
+    width: 100%;
 }
 
 .section-img{
@@ -12,9 +12,10 @@
 }
 
 .section-title{
-    font-size: 64px;
+    font-size: 40px;
     align-self: flex-start;
-    margin-left: 20px;
+    font-family: 'Poppins-Bold';
+    margin-top: 100px;
 }
 
 .section-body{
@@ -25,8 +26,9 @@
 }
 
 .section-text{
-    text-align: justify;
+    text-align: left;
     font-size: 20px;
-    width: 400px;
+    width: 410px;
     font-family: 'Roboto';
+    margin-left: 100px;
 }

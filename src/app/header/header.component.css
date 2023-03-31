@@ -13,7 +13,8 @@
 
 .logo{
     cursor: pointer;
-    width: 50px
+    width: 50px;
+    transition-duration: 0.5s;
 }
 
 .link-wrapper{
@@ -32,6 +33,10 @@
     padding: 0px 10px;
     border: solid;
     border-radius: 20px;
+}
+
+.logo:hover{
+    transform: scale(1.04);
 }
 
 .link:hover{

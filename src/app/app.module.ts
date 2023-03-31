@@ -8,6 +8,7 @@ import { LandPageComponent } from './land-page/land-page.component';
 import { BannerComponent } from './banner/banner.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { OurHistoryComponent } from './our-history/our-history.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { OurHistoryComponent } from './our-history/our-history.component';
     BannerComponent,
     ProjectsPageComponent,
     ProjectsPageComponent,
-    OurHistoryComponent
+    OurHistoryComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
