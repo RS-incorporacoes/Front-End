@@ -1,0 +1,48 @@
+.footer {
+    background: #4C0000;
+    color: #F7F7F7;
+    display: flex;
+}
+
+.logo-img {
+    display: inline-block;
+    position: relative;
+    top: 65px;
+    left: 12%;
+}
+
+.contato {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 16px;
+    position: relative;
+    top: -80px;
+    left: 38%;
+}
+
+.social-media {
+    display: flex;
+    gap: 30px;
+}
+
+.social-media > a > img {
+    display: flex;
+    width: 28px;
+}
+
+.informacoes {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 16px;
+    position: relative;
+    top: -80px;
+    left: 17%;
+}
+hr {
+    border: none;
+    border-top: 2px solid #6A0000;
+    width: 38%;
+    margin-left: 0px;
+}
