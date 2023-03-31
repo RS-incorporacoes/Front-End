@@ -25,10 +25,21 @@
 .link{
     cursor:pointer;
     font-size: 20px;
+    border-bottom: solid white;
 }
 
 .bordered{
     padding: 0px 10px;
     border: solid;
     border-radius: 20px;
+}
+
+.link:hover{
+    border-bottom: solid #4C0000;
+}
+
+.bordered:hover{
+    background: #4C0000;
+    color: white;
+    border: solid #4C0000; 
 }
