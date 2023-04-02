@@ -9,6 +9,9 @@ import { BannerComponent } from './banner/banner.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { OurHistoryComponent } from './our-history/our-history.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { OurProjectsComponent } from './our-projects/our-projects.component';
+import { QualityOfLifeComponent } from './quality-of-life/quality-of-life.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
     ProjectsPageComponent,
     ProjectsPageComponent,
     OurHistoryComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    AboutPageComponent,
+    OurProjectsComponent,
+    QualityOfLifeComponent
   ],
   imports: [
     BrowserModule,

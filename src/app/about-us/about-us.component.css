@@ -13,13 +13,14 @@
     color: white;
     height: fit-content;
     padding: 15px 0px 75px 200px;
-    width: calc(100% + 100px);
+    width: 100%;
     height: 300px;
 }
 
 .section-title{
     align-self: flex-start;
     font-size: 40px;
+    margin-bottom: 0px;
     padding: 25px 0px 0px 0px;
 }
 
@@ -28,14 +29,14 @@
     text-align: justify;
     width: 35%;
     align-self: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .section-button{
     background-color: white;
     color: #4C0004;
     font-family: 'Poppins-SemiBold';
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 5px 10px;
     font-size: 16px;
     align-self: flex-start;
@@ -56,5 +57,6 @@
 
 .section-img{
     width: 25%;
-    margin-left: -890px;
+    margin-left: -800px;
+    border-radius: 16px;
 }
