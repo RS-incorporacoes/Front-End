@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+#footer_content {
+    display: flex;
+}
+
+#footer_content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+
+}
+
+.box .content {
+    margin: 20px 0 0 0;
+}
+
+
+
+
+hr {
+    border: none;
+    border-top: 2px solid #6A0000;
+    width: 100%;
+    
+}
