@@ -1,7 +1,6 @@
 .section-wrapper{
     display: flex;
     align-items: center;
-    margin-top: 100px;
 }
 
 .section-body{
@@ -25,7 +24,7 @@
 }
 
 .section-text{
-    font-family: 'Roboto';
+    font-family: 'Roboto-Regular';
     text-align: justify;
     width: 35%;
     align-self: flex-start;
@@ -51,13 +50,21 @@
 
 .section-button:hover{
     transform: scale(1.1);
-    /* background-color: #7b0006;
-    color: white; */
 }
 
 .section-img{
-    width: 25%;
+    transition: .8s ease all;
+    width: 1000px;
+}
+
+.container{
+    border-radius: 30px;
+    border: solid #f7f7f7 10px;
+    background-image: url(../../assets/images/image.png);
+    background-size: cover;
+    background-position: center;
+    width: 370px;
+    height: 555px;
+    z-index: 1;
     margin-left: -800px;
-    border-radius: 16px;
-    border: solid 10px #F7F7F7;
 }

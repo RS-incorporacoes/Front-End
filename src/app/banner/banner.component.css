@@ -5,8 +5,19 @@
     align-items: center;
 }
 
-.banner-image{
+.mask{
+    /* mask-image: url(../../assets/images/banner.png);
+    mask-repeat: no-repeat; */
+    background-image: url(../../assets/images/171271.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     width: 1200px;
+    height: 600px;
+}
+
+.banner-image{
+    max-width: 1200px;
 }
 
 .title{

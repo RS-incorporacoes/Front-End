@@ -1,5 +1,76 @@
 .section-wrapper{
     width: 100%;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 100px solid white;
 }
 
+.section-title{
+    padding-top: 60px;
+    margin-left: 200px;
+    font-family: 'Poppins-Bold';
+    font-size: 40px;
+}
+
+.section-img{
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+    background-image: url(../../assets/images/bg-serviços.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.section-body{
+    display: flex;
+}
+
+.advantages-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 500px;
+    margin-left: 30px;
+}
+
+.advantages-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    
+}
+
+.advantages-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto-Regular';
+    text-align: justify;
+    font-size: 16px;
+    width: 280px;
+    margin-left: 30px;
+}
+
+
+.advantages-text p{
+    margin: 0;
+}
+
+.advantages-title{
+    font-family: 'Poppins-Bold';
+    font-size: 28px;
+    margin: 0;
+}
+
+.advantages-img{
+    background-color: #A30202;
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    padding: 25px;
+;
+}

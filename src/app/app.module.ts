@@ -13,6 +13,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { OurProjectsComponent } from './our-projects/our-projects.component';
 import { QualityOfLifeComponent } from './quality-of-life/quality-of-life.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AdvantagesComponent } from './advantages/advantages.component';
     AboutPageComponent,
     OurProjectsComponent,
     QualityOfLifeComponent,
-    AdvantagesComponent
+    AdvantagesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
