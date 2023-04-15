@@ -22,6 +22,7 @@ a .footer-text{
     justify-content: space-between;
     width: 135px;
     height: fit-content;
+    cursor: pointer;
 }
 
 .title{
