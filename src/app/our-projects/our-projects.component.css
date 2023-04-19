@@ -5,6 +5,40 @@
     justify-content: space-between;
 }
 
+.button-hover{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    min-width: 102px;
+}
+
+.button-hover.esq{
+    justify-content: flex-start;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.button, .button-esq{
+    transition: .8s;
+
+}
+
+.button-esq{
+    justify-self: flex-start;
+}
+
+
+.button-hover:hover .button{
+    margin-right: -10px;
+}
+
+.button-hover:hover .button-esq{
+    margin-left: -10px;
+}
+
 .section-text{
     display: flex;
     justify-content: space-between;
@@ -14,8 +48,12 @@
 
 .link{
     font-size: 20px;
+}
+
+.see-all{
+    display: flex;
     margin-right: 0px;
-    transition: .8s;
+    transition: .5s;
 }
 
 .hover-box{
@@ -23,7 +61,7 @@
     cursor: pointer;
 }
 
-.hover-box:hover .link{
+.hover-box:hover .see-all{
     margin-right: -10px;
 }
 
@@ -70,8 +108,30 @@
     transform: scale(1.1);
 }
 
+.container:hover .project-label{
+    visibility: visible;
+}
+
 .container:hover::after {
     opacity: 0.2;
+}
+
+.project-label{
+    visibility: hidden;
+    z-index: 2;
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-size: 16px;
+    max-width: 200px;
+    text-align: center;
+    position: absolute;
+    /* transition-delay: 0.5s; */
+}
+
+.center .project-label{
+    font-size: 24px;
+    max-width: 500px;
+    /* transition-delay: 0.8s; */
 }
 
 .bottom-left-border{

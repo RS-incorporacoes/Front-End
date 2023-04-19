@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "nome": "Projeto 1",
+      "imagePath": "../../assets/images/Rectangle 64.png"
+    },
+    {
+      "id": 2,
+      "nome": "Projeto 2",
+      "imagePath": "../../assets/images/Rectangle 65.png"
+    },
+    {
+      "id": 3,
+      "name": "Projeto 3",
+      "imagePath": "../../assets/images/Rectangle 66.png"
+    }
+  ]
+}

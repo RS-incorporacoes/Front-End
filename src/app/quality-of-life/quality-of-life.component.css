@@ -15,17 +15,18 @@
 }
 
 .section-img{
-    width: 400px;
+    width: 590px;
     height: 400px;
-    margin-left: 200px;
     background-image: url(../../assets/images/bg-serviços.png);
-    background-position: center;
+    background-position:center;
     background-size: cover;
     border-radius: 25px;
+    justify-self: flex-start;
 }
 
 .section-body{
     display: flex;
+    justify-content: center;
 }
 
 .advantages-wrapper{
@@ -51,7 +52,7 @@
     font-family: 'Roboto-Regular';
     text-align: justify;
     font-size: 16px;
-    width: 280px;
+    width: 325px;
     margin-left: 30px;
 }
 
@@ -61,7 +62,7 @@
 }
 
 .advantages-title{
-    font-family: 'Poppins-Bold';
+    font-family: 'Poppins-SemiBold';
     font-size: 28px;
     margin: 0;
 }

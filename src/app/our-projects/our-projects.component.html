@@ -4,18 +4,34 @@
             Nossos projetos.
         </h1>
         <div routerLink="/projetos" class="hover-box">
-            <p class="link" >ver todos ></p>
+            <div class="see-all">
+                <p class="link" >ver todos</p>
+                <img width="20" src="../../assets/images/next.svg">
+            </div>
         </div>
     </div>
     <div class="section-img-wrapper">
+        <!-- <div [style]="centerImg > 1 ? '' : 'cursor:default'" class="button-hover esq"> -->
+        <!-- <div class="button-hover esq"> -->
+            <!-- <img [class]="centerImg > 1 ? 'button-esq' : 'hidden'" (click)="prevImage()" src="../../assets/images/prev.svg" > -->
+            <!-- <img class="button-esq" (click)="prevImage()" src="../../assets/images/prev.svg"> -->
+        <!-- </div> -->
         <div class="container bottom-left-border">
-            <img routerLink="/projetos" class="section-img" src="../../assets/images/Rectangle 64.png">
+            <p class="project-label">Lote E/C, localizado na Avenida P/Y. Em frente ao vale dos cajueiros tortos</p>
+            <img routerLink="/projetos" class="section-img" [src]="imagePath[centerImg - 1]">
         </div>
         <div class="container center">
-            <img routerLink="/projetos" class="section-img center-img" src="../../assets/images/Rectangle 65.png">
+            <p class="project-label">Lote E/C, localizado na Avenida P/Y. Em frente ao vale dos cajueiros tortos</p>
+            <img routerLink="/projetos" class="section-img" [src]="imagePath[centerImg]">
         </div>
-        <div class="container top-right-border">
-            <img routerLink="/projetos" class="section-img" src="../../assets/images/Rectangle 66.png">
+        <div class="container top-right-border" style="margin-right: 0px;" >
+            <p class="project-label">Lote E/C, localizado na Avenida P/Y. Em frente ao vale dos cajueiros tortos</p>
+            <img routerLink="/projetos" class="section-img" [src]="imagePath[centerImg + 1]">
         </div>
+        <!-- <div [style]="centerImg + 2 > imagePath.length - 1 ? 'cursor:default' : ''" class="button-hover"> -->
+        <!-- <div class="button-hover"> -->
+            <!-- <img [class]="centerImg + 2 > imagePath.length - 1 ? 'hidden' : 'button'" (click)="nextImage()" src="../../assets/images/next.svg" > -->
+            <!-- <img class="button" (click)="nextImage()" src="../../assets/images/next.svg" > -->
+        <!-- </div> -->
     </div>
 </section>
