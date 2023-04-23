@@ -14,6 +14,8 @@ import { OurProjectsComponent } from './our-projects/our-projects.component';
 import { QualityOfLifeComponent } from './quality-of-life/quality-of-life.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,11 +31,13 @@ import { FooterComponent } from './footer/footer.component';
     OurProjectsComponent,
     QualityOfLifeComponent,
     AdvantagesComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
