@@ -10,27 +10,27 @@
             </div>
         </div>
     </div>
-    <div (click)="selectProject(projects[centerImg - 1].id)" routerLink="projetos" class="section-img-wrapper">
+    <div (click)="selectProject(project[centerImg - 1].id)" routerLink="projetos" class="section-img-wrapper">
         <div class="container bottom-left-border">
             <div class="project-label">
-                <p>{{ projects[centerImg - 1].name }}</p>
-                <p>{{ projects[centerImg - 1].address }}</p>
+                <p>{{ project[centerImg - 1].name }}</p>
+                <p>{{ project[centerImg - 1].address }}</p>
             </div>
-            <img routerLink="projetos" class="section-img" [src]="projects[centerImg - 1].img">
+            <img routerLink="projetos" class="section-img" [src]="project[centerImg - 1].img">
         </div>
-        <div (click)="selectProject(projects[centerImg].id)" routerLink="projetos" class="container center">
+        <div (click)="selectProject(project[centerImg].id)" routerLink="projetos" class="container center">
             <div class="project-label">
-                <p>{{ projects[centerImg].name }}</p>
-                <p>{{ projects[centerImg].address }}</p>
+                <p>{{ project[centerImg].name }}</p>
+                <p>{{ project[centerImg].address }}</p>
             </div>
-            <img routerLink="projetos" class="section-img" [src]="projects[centerImg].img">
+            <img routerLink="projetos" class="section-img" [src]="project[centerImg].img">
         </div>
-        <div (click)="selectProject(projects[centerImg + 1].id)" routerLink="projetos" class="container top-right-border" style="margin-right: 0px;" >
+        <div (click)="selectProject(project[centerImg + 1].id)" routerLink="projetos" class="container top-right-border" style="margin-right: 0px;" >
             <div class="project-label">
-                <p>{{ projects[centerImg + 1].name }}</p>
-                <p>{{ projects[centerImg + 1].address }}</p>
+                <p>{{ project[centerImg + 1].name }}</p>
+                <p>{{ project[centerImg + 1].address }}</p>
             </div>
-            <img class="section-img" [src]="projects[centerImg + 1].img">
+            <img class="section-img" [src]="project[centerImg + 1].img">
         </div>
     </div>
 </section>
