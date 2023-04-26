@@ -3,6 +3,7 @@
     <app-header></app-header>
   </header>
   <div>
+    <img (click)="scrollToTop()" [class]="windowScrolled ? 'show-scrollTop' : 'to-top'" src="../assets/images/uparrow.svg">
     <router-outlet></router-outlet>
   </div>
   <footer>
