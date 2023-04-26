@@ -26,6 +26,14 @@
 /* forms */
 input {
   border: none;
+  padding: 5px 10px;
+  font-family: 'Roboto-Regular';
+  color:#8F8F8F
+}
+
+textarea{
+    padding: 10px;
+    font-family: 'Roboto-Regular';
 }
 
 .forms {
@@ -53,14 +61,17 @@ label {
 }
 
 .btn-submit {
-    color: #F0F0F0;
+    all: unset;
+    text-align: center;
+    color: #ffffff;
     background-color: #4C0000;
     margin: 21px 0px 23px 63px;
     height: 31px;
     width: 167px;
-    border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     font-size: 12px;
+    font-family: 'Poppins-Bold';
+    cursor: pointer;
 }
 
 .form-textarea {
@@ -69,4 +80,8 @@ label {
     resize: none; 
     color: #8F8F8F;
     border: none;
+}
+
+.form-textarea:focus{
+    outline: none;
 }
