@@ -16,6 +16,8 @@ import { AdvantagesComponent } from './advantages/advantages.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { MoreInfoComponent } from './more-info/more-info.component';
+import { ProjectsCarouselComponent } from './projects-carousel/projects-carousel.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { FormsModule } from '@angular/forms';
     AdvantagesComponent,
     FooterComponent,
     ContactComponent
+    MoreInfoComponent,
+    ProjectsCarouselComponent
   ],
   imports: [
     BrowserModule,
