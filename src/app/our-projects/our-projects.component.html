@@ -10,28 +10,27 @@
             </div>
         </div>
     </div>
-    <div class="section-img-wrapper">
-        <!-- <div [style]="centerImg > 1 ? '' : 'cursor:default'" class="button-hover esq"> -->
-        <!-- <div class="button-hover esq"> -->
-            <!-- <img [class]="centerImg > 1 ? 'button-esq' : 'hidden'" (click)="prevImage()" src="../../assets/images/prev.svg" > -->
-            <!-- <img class="button-esq" (click)="prevImage()" src="../../assets/images/prev.svg"> -->
-        <!-- </div> -->
+    <div (click)="selectProject(projects[centerImg - 1].id)" routerLink="projetos" class="section-img-wrapper">
         <div class="container bottom-left-border">
-            <p class="project-label">Lote E/C, localizado na Avenida P/Y. Em frente ao vale dos cajueiros tortos</p>
-            <img routerLink="/projetos" class="section-img" [src]="imagePath[centerImg - 1]">
+            <div class="project-label">
+                <p>{{ projects[centerImg - 1].name }}</p>
+                <p>{{ projects[centerImg - 1].address }}</p>
+            </div>
+            <img routerLink="projetos" class="section-img" [src]="projects[centerImg - 1].img">
         </div>
-        <div class="container center">
-            <p class="project-label">Lote E/C, localizado na Avenida P/Y. Em frente ao vale dos cajueiros tortos</p>
-            <img routerLink="/projetos" class="section-img" [src]="imagePath[centerImg]">
+        <div (click)="selectProject(projects[centerImg].id)" routerLink="projetos" class="container center">
+            <div class="project-label">
+                <p>{{ projects[centerImg].name }}</p>
+                <p>{{ projects[centerImg].address }}</p>
+            </div>
+            <img routerLink="projetos" class="section-img" [src]="projects[centerImg].img">
         </div>
-        <div class="container top-right-border" style="margin-right: 0px;" >
-            <p class="project-label">Lote E/C, localizado na Avenida P/Y. Em frente ao vale dos cajueiros tortos</p>
-            <img routerLink="/projetos" class="section-img" [src]="imagePath[centerImg + 1]">
+        <div (click)="selectProject(projects[centerImg + 1].id)" routerLink="projetos" class="container top-right-border" style="margin-right: 0px;" >
+            <div class="project-label">
+                <p>{{ projects[centerImg + 1].name }}</p>
+                <p>{{ projects[centerImg + 1].address }}</p>
+            </div>
+            <img class="section-img" [src]="projects[centerImg + 1].img">
         </div>
-        <!-- <div [style]="centerImg + 2 > imagePath.length - 1 ? 'cursor:default' : ''" class="button-hover"> -->
-        <!-- <div class="button-hover"> -->
-            <!-- <img [class]="centerImg + 2 > imagePath.length - 1 ? 'hidden' : 'button'" (click)="nextImage()" src="../../assets/images/next.svg" > -->
-            <!-- <img class="button" (click)="nextImage()" src="../../assets/images/next.svg" > -->
-        <!-- </div> -->
     </div>
 </section>

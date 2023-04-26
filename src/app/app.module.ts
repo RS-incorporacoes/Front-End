@@ -14,6 +14,8 @@ import { OurProjectsComponent } from './our-projects/our-projects.component';
 import { QualityOfLifeComponent } from './quality-of-life/quality-of-life.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { FooterComponent } from './footer/footer.component';
+import { MoreInfoComponent } from './more-info/more-info.component';
+import { ProjectsCarouselComponent } from './projects-carousel/projects-carousel.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FooterComponent } from './footer/footer.component';
     OurProjectsComponent,
     QualityOfLifeComponent,
     AdvantagesComponent,
-    FooterComponent
+    FooterComponent,
+    MoreInfoComponent,
+    ProjectsCarouselComponent
   ],
   imports: [
     BrowserModule,

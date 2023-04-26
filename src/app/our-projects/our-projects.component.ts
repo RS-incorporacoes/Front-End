@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import axios from 'axios';
 
 @Component({
@@ -7,28 +7,17 @@ import axios from 'axios';
   styleUrls: ['./our-projects.component.css']
 })
 
-export class OurProjectsComponent {
+export class OurProjectsComponent implements OnInit {
   baseURL = 'http://localhost:3000/projects'
-  imagePath = ['../../assets/images/171244.jpg','../../assets/images/171251.jpg','../../assets/images/171271.jpg','../../assets/images/darkforest.jpg','../../assets/images/1535930.jpg','../../assets/images/10838509.jpg']
+  projects: any
   centerImg = 1
 
-  async getProject(){
+  async ngOnInit(){
    const res = await axios.get(this.baseURL)
+   this.projects = res.data
   }
 
-  nextImage(){
-    if(!(this.centerImg + 2 > this.imagePath.length - 1)){
-      this.centerImg++
-    }
+  selectProject(id: number){
+    localStorage.setItem("project", id.toString())
   }
-
-  prevImage(){
-    if(!(this.centerImg - 2 < 0)){
-      this.centerImg--
-    }
-  }
-  
-
-  voltar = '<'
-  prox = '>'
 }
