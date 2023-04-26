@@ -14,6 +14,8 @@ import { OurProjectsComponent } from './our-projects/our-projects.component';
 import { QualityOfLifeComponent } from './quality-of-life/quality-of-life.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
 import { MoreInfoComponent } from './more-info/more-info.component';
 import { ProjectsCarouselComponent } from './projects-carousel/projects-carousel.component';
 
@@ -32,12 +34,14 @@ import { ProjectsCarouselComponent } from './projects-carousel/projects-carousel
     QualityOfLifeComponent,
     AdvantagesComponent,
     FooterComponent,
+    ContactComponent
     MoreInfoComponent,
     ProjectsCarouselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

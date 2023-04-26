@@ -1,0 +1,76 @@
+<section style="margin-left: 282px; margin-top: 40px;">
+    <h4 style="color:#800000; margin-bottom: 0px; font-size: 20px;">Respostas em até 24h</h4>
+    <h1 style="margin-top: 0px; font-size: 40px;">Entre em contato.</h1>
+
+</section>
+
+<section style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: 100px;">
+    
+    <div class="rectangule-body">
+        <div class="company-information">
+            <h1 style="color: #ffffff; padding-left: 50px;">Nossa empresa</h1>
+            <div style="display: flex; padding-left: 50px;">
+                <img style="align-self: flex-start; margin-right: 8px; margin-top: 5px;" src="../../assets/images/location.svg">
+                <h4 style="color: #ffffff; margin: 0">Povoado Lagoa Redonda - S/N <br> Pirambu - SE</h4>
+            </div>
+            
+            <div style="display: flex; padding-left: 50px;">
+                <img src="../../assets/images/logo-email.svg" >
+                <h4 style="color: #ffffff; margin-left: 8px; margin-right: 49px;">rsincorporacoes@gmail.com</h4>
+            </div>
+
+            <div style="display: flex; padding-left: 50px;">
+                <img src="../../assets/images/logo-phone.svg" >
+                <h4 style="color: #ffffff; margin-left: 8px;">(79) 99637-4295</h4>
+            </div>
+
+            <div class="icons">
+                <a href="https://www.instagram.com/rsincorporacoes/" target="_blank">
+                    <img style="cursor:pointer" src="../../assets/images/instagram.svg">
+                </a>
+                <a href="">
+                    <img style="cursor:pointer" src="../../assets/images/facebook.svg">
+                </a>
+                <a href="">
+                    <img style="cursor:pointer" src="../../assets/images/youtube.svg">
+                </a>
+            </div>
+
+        </div>
+         
+        <form class="form" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <div  class="forms-left">
+                    <label for="firstName">Nome</label>
+                    <input type="text" placeholder="Nome" name="firstName" [(ngModel)]="contact.name" >
+                </div>
+
+                <div class="forms-right">
+                    <label for="lastName">Sobrenome</label>
+                    <input type="text" placeholder="Sobrenome" name="lastName" [(ngModel)]="contact.lastName">
+                </div>
+              
+            </div>
+            <div class="form-group">
+                <div class="forms-left">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Email" name="email" [(ngModel)]="contact.email" >
+                </div>
+
+                <div class="forms-right">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" placeholder="Telefone" name="phone" [(ngModel)]="contact.phone" >
+                </div>
+
+            </div>
+            
+            <div class="forms-left">
+              <label for="message">Mensagem</label>
+              <textarea [(ngModel)]="contact.message"  name="message" class="form-textarea">O que você precisa?</textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">ENVIAR MENSAGEM</button>
+          </form>
+          
+    </div>
+</section>
