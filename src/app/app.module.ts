@@ -34,7 +34,7 @@ import { ProjectsCarouselComponent } from './projects-carousel/projects-carousel
     QualityOfLifeComponent,
     AdvantagesComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
     MoreInfoComponent,
     ProjectsCarouselComponent
   ],
