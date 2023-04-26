@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import axios from 'axios';
 
 @Component({
   selector: 'app-contact',
@@ -14,6 +15,15 @@ export class ContactComponent {
     message: ''
   }
   onSubmit() {
+    axios.post('http://localhost:3000/api/contact', this.contact)
+    .then(response => {
+      console.log(response);
+      alert('Mensagem enviada com sucesso!');
+    })
+    .catch(error => {
+      console.log(error);
+      alert('Ocorreu um erro ao enviar a mensagem.');
+    });
     console.log(this.contact)
   }
 }
