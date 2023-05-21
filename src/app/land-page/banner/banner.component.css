@@ -8,7 +8,7 @@
 .mask{
     /* mask-image: url(../../assets/images/banner.png);
     mask-repeat: no-repeat; */
-    background-image: url(../../assets/images/171271.jpg);
+    background-image: url(../../../assets/images/171271.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -37,4 +37,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (max-width: 390px){
+    .title{
+        font-family: 'Poppins-Bold';
+        margin-left: 0px;
+        font-size: 32px;
+    }
+    .title.larger{
+        font-family: 'Poppins-Bold';
+        margin:0px;
+        font-size: 64px;
+    }
 }

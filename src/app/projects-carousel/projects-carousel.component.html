@@ -1,9 +1,0 @@
-<section style="display: flex; justify-content: space-between; width:100%; margin-bottom: 5px;">
-    <div [class]="id == project.id ? 'selected' : 'project-wrapper'" *ngFor=" let project of projects" (click)="selectProject(project.id)" >
-        <img [class]="id == project.id ? 'selected' : 'carousel-img'" [src]="project.img">
-        <div style="padding: 10px;">
-            <h1 style="font-family: 'Poppins-SemiBold'; font-size: 18px;"> {{ project.name }}</h1>
-            <span style="color: #000000; font-family: 'Roboto-Regular'; text-align: justify; font-size: 12px;"> {{ project.shotDesc }}</span>
-        </div>
-    </div>
-</section>

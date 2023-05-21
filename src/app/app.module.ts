@@ -5,19 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LandPageComponent } from './land-page/land-page.component';
-import { BannerComponent } from './banner/banner.component';
-import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { OurHistoryComponent } from './our-history/our-history.component';
-import { AboutUsComponent } from './about-us/about-us.component';
+import { BannerComponent } from './land-page/banner/banner.component';
+import { OurHistoryComponent } from './land-page/our-history/our-history.component';
+import { AboutUsComponent } from './land-page/about-us/about-us.component';
 import { AboutPageComponent } from './about-page/about-page.component';
-import { OurProjectsComponent } from './our-projects/our-projects.component';
-import { QualityOfLifeComponent } from './quality-of-life/quality-of-life.component';
-import { AdvantagesComponent } from './advantages/advantages.component';
+import { OurProjectsComponent } from './land-page/our-projects/our-projects.component';
+import { QualityOfLifeComponent } from './land-page/quality-of-life/quality-of-life.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
-import { MoreInfoComponent } from './more-info/more-info.component';
-import { ProjectsCarouselComponent } from './projects-carousel/projects-carousel.component';
 
 @NgModule({
   declarations: [
@@ -25,18 +21,13 @@ import { ProjectsCarouselComponent } from './projects-carousel/projects-carousel
     HeaderComponent,
     LandPageComponent,
     BannerComponent,
-    ProjectsPageComponent,
-    ProjectsPageComponent,
     OurHistoryComponent,
     AboutUsComponent,
     AboutPageComponent,
     OurProjectsComponent,
     QualityOfLifeComponent,
-    AdvantagesComponent,
     FooterComponent,
     ContactComponent,
-    MoreInfoComponent,
-    ProjectsCarouselComponent
   ],
   imports: [
     BrowserModule,
