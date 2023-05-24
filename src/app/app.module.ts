@@ -10,7 +10,6 @@ import { OurHistoryComponent } from './land-page/our-history/our-history.compone
 import { AboutUsComponent } from './land-page/about-us/about-us.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { OurProjectsComponent } from './land-page/our-projects/our-projects.component';
-import { QualityOfLifeComponent } from './land-page/quality-of-life/quality-of-life.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
@@ -25,7 +24,6 @@ import { FormsModule } from '@angular/forms';
     AboutUsComponent,
     AboutPageComponent,
     OurProjectsComponent,
-    QualityOfLifeComponent,
     FooterComponent,
     ContactComponent,
   ],

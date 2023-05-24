@@ -50,9 +50,9 @@ footer{
     bottom: 0;
 }
 
-@media (max-width:391px){
+@media (max-width: 391px){
     html,
     body{
-        
+        /* width: 390px; */
     }
 }

@@ -1,7 +1,7 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 20px 20px;
     background-color: #4C0000;
 }
 
@@ -50,4 +50,11 @@
     background: white;
     color: #4C0000;
     border: solid white
+}
+
+@media (max-width: 391px){
+    .nav{
+        border-radius: 0px 0px 25px 25px;
+        /* position: fixed; */
+    }
 }

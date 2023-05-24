@@ -15,7 +15,7 @@
 .section-body{
     height: 450px;
     border-radius: 0px 90px 0px 90px;
-    background-image: url(../../assets/images/10838509.jpg);
+    background-image: url(../../../assets/images/10838509.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -36,4 +36,14 @@
     text-align: justify;
     background-color: #f7f7f7e7;
     z-index: 1;
+}
+
+@media (max-width:391px){
+    .section-body{
+        display: none;
+    }
+
+    .section-wrapper{
+        
+    }
 }
