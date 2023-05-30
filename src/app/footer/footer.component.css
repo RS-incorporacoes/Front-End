@@ -16,6 +16,12 @@ a .footer-text{
     font-family: 'Roboto-Regular';
 }
 
+.logo-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .footer-logo{
     display: flex;
     justify-content: space-between;
@@ -46,6 +52,14 @@ a .footer-text{
     width: 700px;
 }
 
+.footer-body-m{
+    display: none;
+}
+
+.footer-block-m{
+    display: none;
+}
+
 .footer-contacts{
     border-bottom: solid #6A0000;
     width: 300px;
@@ -73,4 +87,19 @@ a .footer-text{
 
 #logo{
     border-radius: 200px;
+}
+
+@media (max-width:391px){
+    .footer-body{
+        display: none;
+    }
+
+    .footer-body-m{
+        display: flex;
+    }
+
+    .footer-block-m{
+        display: flex;
+        border-bottom: solid #6A0000;
+    }
 }

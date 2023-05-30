@@ -7,7 +7,7 @@
 
 .nav-wrapper{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     width: 100%;
 }
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 210px;
+    width: 350px;
 }
 
 .link{
@@ -55,6 +55,5 @@
 @media (max-width: 391px){
     .nav{
         border-radius: 0px 0px 25px 25px;
-        /* position: fixed; */
     }
 }
