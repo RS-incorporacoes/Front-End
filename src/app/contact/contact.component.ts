@@ -15,7 +15,8 @@ export class ContactComponent {
     message: ''
   }
   onSubmit() {
-    axios.post('http://localhost:3000/api/contact', this.contact)
+    console.log(this.contact)
+    axios.post('https://us-central1-rs-incorporacoes.cloudfunctions.net/sendEmail', this.contact)
     .then(response => {
       console.log(response);
       alert('Mensagem enviada com sucesso!');
@@ -24,6 +25,6 @@ export class ContactComponent {
       console.log(error);
       alert('Ocorreu um erro ao enviar a mensagem.');
     });
-    console.log(this.contact)
+    
   }
 }
